@@ -18,7 +18,10 @@ function openFileSafely(path)
     }
 
     if (openedDoc) {
-        return openedDoc.duplicate(openedDoc.name + "--gen##major_Evil Darth Schneider");
+        // Duplicate the document providing a supposedly unique name for
+        // its copy
+        return openedDoc.duplicate(openedDoc.name
+                                   + "--gen##major_Evil Darth Schneider");
     } else {
         var fileRef = File(path);
         return app.open(fileRef);
