@@ -3,8 +3,8 @@ This is a collection of scripts for use with Photoshop.
 See [Adobe Photoshop Scripting][1] for more information.
 
 Some scripts require arguments. I've included a launcher script
-`invoke_js` written in python to be able to invoke scripts from the
-command line and supply any desired arguments to them.
+`invoke_js.py` to be able to invoke scripts from the command line and
+supply any desired arguments to them.
 
 At the moment, there is no particular arrangement of pieces of code
 within this project. As the number of utilities grows, I'll try to group
