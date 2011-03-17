@@ -27,7 +27,7 @@ def main(path, args):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print 'Usage: invoke-js SCRIPT_NAME [arguments ...]'
+        print 'Usage: invoke-js.py SCRIPT_NAME [arguments ...]'
         exit(1)
 
     main(sys.argv[1], sys.argv[2:])
