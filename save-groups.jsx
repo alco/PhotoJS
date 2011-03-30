@@ -48,6 +48,9 @@ docRef.close(SaveOptions.DONOTSAVECHANGES);
 function saveLayerSet(layerSetRef, ignoreInvisible)
   /* Save all layers under the specified set */
 {
+    if (ignoreInvisible && !layerSetRef.visible)
+        return;
+
     for (var i = 0; i < layerSetRef.artLayers.length; ++i) {
         var layerRef = layerSetRef.artLayers[i];
         if (ignoreInvisible && !layerRef.visible)
